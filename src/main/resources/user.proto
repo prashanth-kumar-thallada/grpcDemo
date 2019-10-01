@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.prashanth.grpcDemo";
+
+service user  {
+    rpc sayHello (request) returns (response);
+}
+
+message request {
+    string name = 1;
+}
+
+message response {
+    string responseMessage = 1;
+}
